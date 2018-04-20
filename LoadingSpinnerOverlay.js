@@ -7,8 +7,12 @@
 
 import React, {
     Component,
-    PropTypes,
 } from 'react'
+
+import PropTypes from 'prop-types'
+
+import ViewPropTypes from 'react-native'
+
 import {
     View,
     Modal,
@@ -52,8 +56,8 @@ class LoadingSpinnerOverlay extends Component {
     }
 
     static propTypes = {
-        overlayStyle: View.propTypes.style,
-        style: View.propTypes.style,
+        overlayStyle: ViewPropTypes.style,
+        style: ViewPropTypes.style,
         duration: PropTypes.number,
         delay: PropTypes.number,
         marginTop: PropTypes.number,
